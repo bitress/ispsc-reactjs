@@ -4,7 +4,7 @@ import Section from '../components/Section';
 const MissionVision = () => {
 
     useEffect(() => {
-        document.title = 'Contact | ISPSC Tagudin';
+        document.title = 'Mission Vision | ISPSC Tagudin';
     
         return () => {
           document.title = 'Home | ISPSC Tagudin';

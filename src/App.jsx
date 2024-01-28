@@ -12,6 +12,7 @@ import AdmissionRequirements from './pages/AdmissionRequirements';
 import CoursesOffered from './pages/CoursesOffered';
 import Hymn from './pages/Hymn';
 import ProcedureForEnrollment from './pages/ProcedureForEnrollment';
+import News from "./pages/News.jsx";
 
 const App = () => {
   return (
@@ -28,7 +29,7 @@ const App = () => {
           <Route path="/procedure-for-enrollment" element={<ProcedureForEnrollment/>}/>
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
-
+          <Route path="news/:id" element={<News />}/>
         </Routes>
         <Footer></Footer>
       </div>

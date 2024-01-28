@@ -4,7 +4,7 @@ import Section from '../components/Section';
 const Hymn = () => {
 
     useEffect(() => {
-        document.title = 'Contact | ISPSC Tagudin';
+        document.title = 'Hymn | ISPSC Tagudin';
     
         return () => {
           document.title = 'Home | ISPSC Tagudin';

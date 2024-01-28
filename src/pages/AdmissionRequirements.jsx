@@ -1,6 +1,7 @@
 import Section from '../components/Section';
 import AccordionItem from '../components/AccordionItem';
 import admission_requirements_banner from '../assets/img/admission_requirements_banner.png'
+import {useEffect} from "react";
 function SeniorHighGraduate() {
     return (
         <>
@@ -83,7 +84,36 @@ function ReturningStudents() {
     );
 }
 
+
+const HSGraduateOldCurriculum = () => {
+
+    return (
+        <>
+            <ul>
+                <li>High School Report Card (Form 138)</li>
+                <li>Certificate of Good Moral Character</li>
+                <li>
+                    Birth Certificate issued by the Philippine Statistic Authority
+                    (PSA); formerly NSO
+                </li>
+                <li>
+                    2 pcs. passport size, white background, with name tag (i.e. DELA
+                    CRUZ, Juan)
+                </li>
+            </ul>
+        </>
+    )
+
+}
+
 const AdmissionRequirements = () => {
+    useEffect(() => {
+        document.title = 'Admission Requirements | ISPSC Tagudin';
+
+        return () => {
+            document.title = 'Home | ISPSC Tagudin';
+        };
+    }, []);
 
     return (
         <>
@@ -103,7 +133,7 @@ const AdmissionRequirements = () => {
                                 />
                                 <h3>Admission Requirements</h3>
     <div className="accordion">
-         <AccordionItem title="High School Graduate of Old Basic Curriculum (2015 and below)" content={<HSGraduateOldCurriculum />} />
+        <AccordionItem title="High School Graduate of Old Basic Curriculum (2015 and below)" content={<HSGraduateOldCurriculum />} />
         <AccordionItem title="Senior High School Graduate (2016 and above)" content={<SeniorHighGraduate/>}/>
         <AccordionItem title="ALS/A&E Passers (Secondary Level)" content={<ALSPassers/>}/>
         <AccordionItem title="Transferees (In-bound)" content={<Transferees/>}/>
@@ -122,25 +152,5 @@ const AdmissionRequirements = () => {
   );
 };
 
-const HSGraduateOldCurriculum = () => {
-
-  return (
-    <>
-      <ul>
-            <li>High School Report Card (Form 138)</li>
-            <li>Certificate of Good Moral Character</li>
-            <li>
-              Birth Certificate issued by the Philippine Statistic Authority
-              (PSA); formerly NSO
-            </li>
-            <li>
-              2 pcs. passport size, white background, with name tag (i.e. DELA
-              CRUZ, Juan)
-            </li>
-          </ul>
-    </>
-  )
-
-}
 
 export default AdmissionRequirements;
