@@ -5,8 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://raw.githubusercontent.com/bitress/ispsc-tagudin-website/main/assets/css/fonts/CenturyGothic/font.css');
-
-
 :root {
   --primary: #007BFF;
   --dark-maroon: #700000;
@@ -185,7 +183,7 @@ nav ul.sub-menu li:hover {
 }
 
 
-.archive a {
+.archive a{
   list-style: none;
   display: block;
   text-decoration: none;
@@ -203,8 +201,8 @@ nav ul.sub-menu li:hover {
 
 .toggle-button {
   cursor: pointer;
-  float: right;
-  margin-right: 10px;
+  float: right;          
+  margin-right: 10px;  
 }
 
 
@@ -226,7 +224,7 @@ nav ul.sub-menu li:hover {
   color: white;
   list-style: none;
   margin-top: 5px;
-  border-bottom: 1px dotted rgba(0, 0, 0, .3);
+  border-bottom: 1px dotted rgba(0,0,0,.3);
   font-size: 15px;
   position: relative;
   padding: 10px 10px;
