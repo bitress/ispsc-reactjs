@@ -13,7 +13,7 @@ const Carousel = () => {
     const autoSlideInterval = setInterval(() => {
       const nextSlide = (currentSlide % imagesData.length) + 1;
       handleChangeSlide(nextSlide);
-    }, 5000);
+    }, 3000);
 
     // Clear the interval when the component is unmounted
     return () => clearInterval(autoSlideInterval);

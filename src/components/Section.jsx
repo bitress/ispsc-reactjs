@@ -51,6 +51,14 @@ function Section(){
               </div>
             </div>
 
+            <div className="card">
+              <h3>About the Author</h3>
+                <img
+                    style={{ width: "100%" }}
+                  src="https://lanyard.cnrad.dev/api/712983261684432897?theme=light&idleMessage=Probably%20doing%20something%20else..."
+                 alt="Lanyard"/>
+            </div>
+
       
           </div>
           </>
