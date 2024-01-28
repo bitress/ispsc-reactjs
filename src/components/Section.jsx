@@ -1,4 +1,13 @@
+import { useState, useEffect } from 'react';
+import announcementsData from '../data/announcements.json'
 function Section(){
+
+    const [announcements, setAnnouncements] = useState([]);
+
+    useEffect(() => {
+        setAnnouncements(announcementsData);
+    }, []);
+
 
     return (
         <>
@@ -6,7 +15,11 @@ function Section(){
             <div className="card">
               <h3>Announcements</h3>
               <ul id='announcements'>
-              <li style={{ marginBottom: "8px" }}>December 01, 2023: 21st Birthday of the Developer</li>
+                  {announcements.map((announcement) => (
+                      <li key={announcement.announcement_id} style={{ marginBottom: "8px" }}>
+                          {`${announcement.announcement_date}: ${announcement.announcement_content}`}
+                      </li>
+                  ))}
               </ul>
             </div>
 
