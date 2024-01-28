@@ -22,8 +22,8 @@ const Footer = () => {
             <h4>Useful Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><a href="/programs">Programs</a></li>
-              <li><a href="/admissions">Admissions</a></li>
+              <li><a href="/what-we-offer">Programs</a></li>
+              <li><a href="/admission-requirements">Admissions</a></li>
               <li><a href="/contacts">Contact Us</a></li>
             </ul>
           </div>
