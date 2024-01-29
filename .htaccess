@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+
+# Redirect to index.html if the requested file doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]
+
+
